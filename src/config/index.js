@@ -228,10 +228,10 @@ export const config  = {
     // 仪表盘页面配置
     DASHBOARD_CONFIG: {
         // 是否在欢迎卡片中显示用户邮箱 (true=显示, false=隐藏)
-        showUserEmail: false,
+        showUserEmail: true,
 
         // 是否为导入订阅按钮添加高光效果和填充底色 (true=添加效果, false=不添加效果)
-        importButtonHighlightBtnbgcolor: false,
+        importButtonHighlightBtnbgcolor: true,
 
         // ===============================
 
@@ -267,13 +267,13 @@ export const config  = {
     // 客户端下载配置
     CLIENT_CONFIG: {
         // 整个下载卡片显示控制
-        showDownloadCard: true,
+        showDownloadCard: false,
 
         // 平台显示控制 (true=显示, false=隐藏)
-        showIOS: true,
-        showAndroid: true,
-        showMacOS: true,
-        showWindows: true,
+        showIOS: false,
+        showAndroid: false,
+        showMacOS: false,
+        showWindows: false,
         showLinux: false,
         showOpenWrt: false,
 
@@ -294,38 +294,38 @@ export const config  = {
         showSurge: true,
         showStash: true,
         showQuantumultX: true,
-        showHiddifyIOS: true,
+        showHiddifyIOS: false,
         showSingboxIOS: false,
         showLoon: true,
 
         // Android平台客户端
         showFlClashAndroid: true,
         showV2rayNG: false,
-        showClashAndroid: true,
+        showClashAndroid: false,
         showSurfboard: true,
         showClashMetaAndroid: true,
         showNekobox: true,
         showSingboxAndroid: false,
-        showHiddifyAndroid: true,
+        showHiddifyAndroid: false,
 
         // Windows平台客户端
         showFlClashWindows: true,
         showClashVergeWindows: true,
-        showClashWindows: true,
+        showClashWindows: false,
         showNekoray: false,
         showSingboxWindows: false,
-        showHiddifyWindows: true,
+        showHiddifyWindows: false,
 
         // MacOS平台客户端
         showFlClashMac: true,
         showClashVergeMac: true,
-        showClashX: true,
-        showClashMetaX: true,
+        showClashX: false,
+        showClashMetaX: false,
         showSurgeMac: true,
         showStashMac: true,
         showQuantumultXMac: true,
         showSingboxMac: false,
-        showHiddifyMac: true
+        showHiddifyMac: false
     },
 
     // ================ Xiao 版本的配置 =======================
