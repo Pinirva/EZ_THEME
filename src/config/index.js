@@ -6,7 +6,7 @@
 
 export const config  = {
     // 面板类型配置 - 请选择您使用的面板类型
-    PANEL_TYPE: 'Xiao-V2board', // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
+    PANEL_TYPE: 'Xboard', // 可选值: 'V2board', 'Xiao-V2board' 或 'Xboard'
     // 说明:
     // 1. V2board: 标准V2board面板，使用默认请求格式
     // 2. Xiao-V2board: Xiao修改版面板，使用特殊格式的请求参数
@@ -29,9 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://skhsn6q4pnv95.ezdemo.xyz/api/v1',
-            'https://gy1v06omopzc8.ezdemo.xyz/api/v1'
+            'https://xboard.196706.xyz/api/v1'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -66,10 +64,10 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: 'EZ THEME',
+        siteName: '月之暗面Cloud',
         siteDescription: 'EZ UI',
         // copyright会自动使用当前年份
-        copyright: `© ${new Date().getFullYear()} EZ THEME. All Rights Reserved.`,
+        copyright: `© ${new Date().getFullYear()} 月之暗面Cloud. All Rights Reserved.`,
 
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
