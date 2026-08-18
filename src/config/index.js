@@ -23,13 +23,13 @@ export const config  = {
         urlMode: 'static',
       
         // 是否展示后端联通性检测
-        showCheckBackend: false,
+        showCheckBackend: true,
       
         // 静态URL模式下的基础URL (urlMode = 'static'时使用)
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://xboard.196706.xyz/'
+            'https://xboard.196706.xyz/api/v1'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -96,7 +96,7 @@ export const config  = {
         defaultLanguage: 'zh-CN',
 
         // 默认主题 ('light' 或 'dark')
-        defaultTheme: 'light',
+        defaultTheme: 'dark',
 
         // 主题色 (16进制颜色值)
         primaryColor: '#355cc2',
@@ -274,8 +274,8 @@ export const config  = {
         showAndroid: true,
         showMacOS: true,
         showWindows: true,
-        showLinux: true,
-        showOpenWrt: true,
+        showLinux: false,
+        showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
@@ -295,25 +295,25 @@ export const config  = {
         showStash: true,
         showQuantumultX: true,
         showHiddifyIOS: true,
-        showSingboxIOS: true,
+        showSingboxIOS: false,
         showLoon: true,
 
         // Android平台客户端
         showFlClashAndroid: true,
-        showV2rayNG: true,
+        showV2rayNG: false,
         showClashAndroid: true,
         showSurfboard: true,
         showClashMetaAndroid: true,
         showNekobox: true,
-        showSingboxAndroid: true,
+        showSingboxAndroid: false,
         showHiddifyAndroid: true,
 
         // Windows平台客户端
         showFlClashWindows: true,
         showClashVergeWindows: true,
         showClashWindows: true,
-        showNekoray: true,
-        showSingboxWindows: true,
+        showNekoray: false,
+        showSingboxWindows: false,
         showHiddifyWindows: true,
 
         // MacOS平台客户端
@@ -324,7 +324,7 @@ export const config  = {
         showSurgeMac: true,
         showStashMac: true,
         showQuantumultXMac: true,
-        showSingboxMac: true,
+        showSingboxMac: false,
         showHiddifyMac: true
     },
 
@@ -469,8 +469,8 @@ export const config  = {
             'WeChat': true,  // 微信内置浏览器
             'Baidu': true,   // 百度浏览器
             'Sogou': true,   // 搜狗浏览器
-            'UC': false,     // UC浏览器
-            'Maxthon': false // 傲游浏览器
+            'UC': true,     // UC浏览器
+            'Maxthon': true // 傲游浏览器
         },
 
         // 推荐下载的浏览器链接
