@@ -23,7 +23,7 @@ export const config  = {
         urlMode: 'static',
       
         // 是否展示后端联通性检测
-        showCheckBackend: true,
+        showCheckBackend: false,
       
         // 静态URL模式下的基础URL (urlMode = 'static'时使用)
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
@@ -99,7 +99,7 @@ export const config  = {
         defaultTheme: 'dark',
 
         // 主题色 (16进制颜色值)
-        primaryColor: '#355cc2',
+        primaryColor: '#6E44FF',
 
         // 是否启用落地页 (true=启用, false=禁用)
         enableLandingPage: true // 默认启用
