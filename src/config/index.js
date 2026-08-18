@@ -29,7 +29,7 @@ export const config  = {
         // 支持字符串形式(单个API地址)或数组形式(多个备选API地址)
         // 多个地址时，会按顺序检测可用性，并使用第一个可用的地址
         staticBaseUrl: [
-            'https://xboard.196706.xyz/api/v1'
+            'https://xboard.196706.xyz/'
         ],
       
         // 自动获取模式配置 (urlMode = 'auto'时使用)
@@ -64,8 +64,8 @@ export const config  = {
 
     // ====================  网站基础配置  ====================
     SITE_CONFIG: {
-        siteName: '月之暗面Cloud',
-        siteDescription: 'EZ UI',
+        siteName: '月之暗面 Cloud',
+        siteDescription: '月之暗面 Cloud',
         // copyright会自动使用当前年份
         copyright: `© ${new Date().getFullYear()} 月之暗面Cloud. All Rights Reserved.`,
 
@@ -74,14 +74,14 @@ export const config  = {
 
         // Landing页面多语言标语
         landingText: {
-            'zh-CN': '探索全球网络无限可能',
-            'vi-VN': 'Khám phá khả năng vô hạn của mạng toàn cầu',
-            'en-US': 'Explore Unlimited Possibilities of Global Network',
-            'zh-TW': '探索全球網絡無限可能',
-            'ja-JP': 'グローバルネットワークの無限の可能性',
-            'ko-KR': '글로벌 네트워크의 무한한 가능성을 탐색하세요',
-            'ru-RU': 'Исследуйте безграничные возможности глобальной сети',
-            'fa-IR': 'امکانات نامحدود شبکه جهانی را کاوش کنید'
+            'zh-CN': 'I'll see you on the dark side of the moon.',
+            'vi-VN': 'I'll see you on the dark side of the moon.',
+            'en-US': 'I'll see you on the dark side of the moon.',
+            'zh-TW': 'I'll see you on the dark side of the moon.',
+            'ja-JP': 'I'll see you on the dark side of the moon.',
+            'ko-KR': 'I'll see you on the dark side of the moon.',
+            'ru-RU': 'I'll see you on the dark side of the moon.',
+            'fa-IR': 'I'll see you on the dark side of the moon.'
         },
 
         // 自定义landing页面路径（相对于public目录
