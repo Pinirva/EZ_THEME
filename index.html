@@ -67,11 +67,14 @@
         }
     </style>
 
-<!-- 引入 LXGW Bright Web Font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Regular/result.min.css">
+<!-- 引入 LXGW Bright Medium (中等粗细) Web Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Medium/result.min.css">
     <style>
       body, #app, * {
         font-family: "LXGW Bright", "LXGW WenKai Bright", sans-serif !important;
+        font-weight: 500 !important; /* 强制提升全局字体的粗细度 */
+        -webkit-font-smoothing: antialiased; /* 开启抗锯齿，让字体边缘更平滑锐利 */
+        -moz-osx-font-smoothing: grayscale;
       }
     </style>
     
