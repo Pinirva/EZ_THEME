@@ -75,6 +75,7 @@
         font-weight: 500 !important; /* 强制提升全局字体的粗细度 */
         -webkit-font-smoothing: antialiased; /* 开启抗锯齿，让字体边缘更平滑锐利 */
         -moz-osx-font-smoothing: grayscale;
+        white-space: pre-line !important;
       }
     </style>
     
@@ -83,5 +84,26 @@
 <div id="app"></div>
 <div class="app-version">v0.4.0</div>
 <script type="module" src="/src/main.js"></script>
+    
+<!-- 👇👇 强制锁定标题的黑魔法脚本 👇👇 -->
+<script>
+  window.addEventListener('load', function() {
+    // 这里填入你真正想在标签页显示的精简名称
+    const myRealTitle = "月之暗面 Cloud"; 
+    
+    const titleElement = document.querySelector('title');
+    if (titleElement) {
+      // 派一个“观察者”死死盯住标题标签
+      new MutationObserver(function() {
+        // 只要标题不是我们设定的名字，就强制给它拽回来
+        if (document.title !== myRealTitle) {
+          document.title = myRealTitle;
+        }
+      }).observe(titleElement, { childList: true });
+    }
+  });
+</script>
+<!-- 👆👆 黑魔法到此结束 👆👆 -->
+    
 </body>
 </html>
