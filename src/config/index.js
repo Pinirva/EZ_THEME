@@ -74,14 +74,14 @@ export const config  = {
 
         // Landing页面多语言标语
         landingText: {
-            'zh-CN': "I'll see you on the dark side of the moon.",
-            'vi-VN': "I'll see you on the dark side of the moon.",
-            'en-US': "I'll see you on the dark side of the moon.",
-            'zh-TW': "I'll see you on the dark side of the moon.",
-            'ja-JP': "I'll see you on the dark side of the moon.",
-            'ko-KR': "I'll see you on the dark side of the moon.",
-            'ru-RU': "I'll see you on the dark side of the moon.",
-            'fa-IR': "I'll see you on the dark side of the moon."
+            'zh-CN': "穿越迷墙 连接世界<br>Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'vi-VN': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'en-US': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'zh-TW': "穿越迷墙 連接世界<br>Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'ja-JP': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'ko-KR': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'ru-RU': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
+            'fa-IR': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon."
         },
 
         // 自定义landing页面路径（相对于public目录
