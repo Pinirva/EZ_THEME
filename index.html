@@ -72,15 +72,11 @@
     
     <style>
       body, #app, * {
-        /* 👇 如果你还想保留刚才聊过的“英文现代粗体”，只需在最前面加上 'Montserrat', 即可 */
-        font-family: "LXGW Bright", "LXGW Bright Light", "LXGW Bright Medium", "LXGW Bright GB", "LXGW Bright GB Light", "LXGW Bright GB Medium", "LXGW Bright TC", "LXGW Bright TC Light", "LXGW Bright TC Medium", sans-serif !important;
+        /* 只保留 Medium 字体和备用系统字体 */
+        font-family: "LXGW Bright Medium", sans-serif !important;
         
-        font-weight: 500 !important; /* 保持 500 的粗细度 */
-        
-        -webkit-font-smoothing: antialiased; /* 字体边缘抗锯齿 */
-        -moz-osx-font-smoothing: grayscale;
-        
-        white-space: pre-line !important; /* 强制识别我们加的 \n 换行符 */
+        /* 保留换行魔法，其他修饰全部去掉 */
+        white-space: pre-line !important; 
       }
     </style>
     
