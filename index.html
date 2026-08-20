@@ -70,13 +70,15 @@
 <!-- 引入 TingjieGuo 修改版的 LXGW Bright Web Font -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css">
     
-    <style>
+  <style>
+      /* 1. 字体全局生效，保持你喜欢的中等粗细 */
       body, #app, * {
-        /* 只保留 Medium 字体和备用系统字体 */
         font-family: "LXGW Bright Medium", sans-serif !important;
-        
-        /* 保留换行魔法，其他修饰全部去掉 */
-        white-space: pre-line !important; 
+      }
+      
+      /* 2. 换行魔法只针对常见的文字标签，放过布局外框，消灭顶部的黑白条 */
+      p, span, h1, h2, h3, h4, h5, h6, .title, .desc, .subtitle {
+        white-space: pre-line !important;
       }
     </style>
     
