@@ -74,10 +74,10 @@ export const config  = {
 
 // Landing页面多语言标语
         landingText: {
-            'zh-CN': "穿越迷墙 连接世界\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'zh-CN': "穿越迷墙 连接世界.\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
             'vi-VN': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
             'en-US': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
-            'zh-TW': "穿越迷墙 連接世界\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'zh-TW': "穿越迷墙 連接世界.\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
             'ja-JP': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
             'ko-KR': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
             'ru-RU': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
