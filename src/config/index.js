@@ -72,16 +72,16 @@ export const config  = {
         // 是否显示标题中的网站Logo (true=显示, false=隐藏)
         showLogo: true,
 
-        // Landing页面多语言标语
+// Landing页面多语言标语
         landingText: {
-            'zh-CN': "穿越迷墙 连接世界<br>Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'vi-VN': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'en-US': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'zh-TW': "穿越迷墙 連接世界<br>Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'ja-JP': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'ko-KR': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'ru-RU': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon.",
-            'fa-IR': "Passing through THE WALL, connecting the world.<br>I'll see you on the dark side of the moon."
+            'zh-CN': "穿越迷墙 连接世界\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'vi-VN': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'en-US': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'zh-TW': "穿越迷墙 連接世界\nPassing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'ja-JP': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'ko-KR': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'ru-RU': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon.",
+            'fa-IR': "Passing through THE WALL, connecting the world.\nI'll see you on the dark side of the moon."
         },
 
         // 自定义landing页面路径（相对于public目录
