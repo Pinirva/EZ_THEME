@@ -67,15 +67,20 @@
         }
     </style>
 
-<!-- 引入 LXGW Bright Medium (中等粗细) Web Font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@chinese-fonts/lxgwwenkaibright@2.0.0/dist/LXGWBright-Medium/result.min.css">
+<!-- 引入 TingjieGuo 修改版的 LXGW Bright Web Font -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tingjieguo/lxgw-bright-webfont/style.css">
+    
     <style>
       body, #app, * {
-        font-family: "LXGW Bright", "LXGW WenKai Bright", sans-serif !important;
-        font-weight: 500 !important; /* 强制提升全局字体的粗细度 */
-        -webkit-font-smoothing: antialiased; /* 开启抗锯齿，让字体边缘更平滑锐利 */
+        /* 👇 如果你还想保留刚才聊过的“英文现代粗体”，只需在最前面加上 'Montserrat', 即可 */
+        font-family: "LXGW Bright", "LXGW Bright Light", "LXGW Bright Medium", "LXGW Bright GB", "LXGW Bright GB Light", "LXGW Bright GB Medium", "LXGW Bright TC", "LXGW Bright TC Light", "LXGW Bright TC Medium", sans-serif !important;
+        
+        font-weight: 500 !important; /* 保持 500 的粗细度 */
+        
+        -webkit-font-smoothing: antialiased; /* 字体边缘抗锯齿 */
         -moz-osx-font-smoothing: grayscale;
-        white-space: pre-line !important;
+        
+        white-space: pre-line !important; /* 强制识别我们加的 \n 换行符 */
       }
     </style>
     
