@@ -267,23 +267,23 @@ export const config  = {
     // 客户端下载配置
     CLIENT_CONFIG: {
         // 整个下载卡片显示控制
-        showDownloadCard: false,
+        showDownloadCard: true,
 
         // 平台显示控制 (true=显示, false=隐藏)
-        showIOS: false,
-        showAndroid: false,
-        showMacOS: false,
-        showWindows: false,
-        showLinux: false,
+        showIOS: true,
+        showAndroid: true,
+        showMacOS: true,
+        showWindows: true,
+        showLinux: true,
         showOpenWrt: false,
 
         // 客户端下载链接  //可以改成文档链接直接在新标签页打开
         clientLinks: {
-            ios: 'https://apps.apple.com/app/xxx',
-            android: 'https://play.google.com/store/apps/xxx',
-            macos: 'https://github.com/xxx/releases/latest',
-            windows: 'https://github.com/xxx/releases/latest',
-            linux: 'https://github.com/xxx/releases/latest',
+            ios: 'https://clashmi.app/download#ios',
+            android: 'https://github.com/chen08209/FlClash/releases/latest',
+            macos: 'https://www.clashverge.dev/install.html#__tabbed_1_3',
+            windows: 'https://github.com/chen08209/FlClash/releases/latest',
+            linux: 'https://github.com/chen08209/FlClash/releases/latest',
             openwrt: 'https://github.com/xxx/releases/latest'
         },
 
