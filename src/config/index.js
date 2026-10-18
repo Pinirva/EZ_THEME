@@ -239,7 +239,7 @@ export const config  = {
         enableResetTraffic: true,
 
         // 重置流量按钮显示条件 ('always'=始终显示, 'low'=流量低于阈值时显示, 'depleted'=流量耗尽时显示)
-        resetTrafficDisplayMode: 'low',
+        resetTrafficDisplayMode: 'always',
 
         // 低流量阈值百分比 (1-100)，当剩余流量百分比低于此值时触发低流量警告
         lowTrafficThreshold: 10,
@@ -258,7 +258,7 @@ export const config  = {
         // ===============================
 
         // 是否显示在线设备数量限制 (true=显示, false=隐藏，仅Xiao-V2board支持)
-        showOnlineDevicesLimit: true,
+        showOnlineDevicesLimit: false,
         
         // 是否显示导入订阅
         showImportSubscription: true,
