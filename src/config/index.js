@@ -281,7 +281,7 @@ export const config  = {
         clientLinks: {
             ios: 'https://clashmi.app/download#ios',
             android: 'https://github.com/chen08209/FlClash/releases/latest',
-            macos: 'https://www.clashverge.dev/install.html#__tabbed_1_3',
+            macos: 'https://github.com/chen08209/FlClash/releases/latest',
             windows: 'https://github.com/chen08209/FlClash/releases/latest',
             linux: 'https://github.com/chen08209/FlClash/releases/latest',
             openwrt: 'https://github.com/xxx/releases/latest'
@@ -290,7 +290,7 @@ export const config  = {
         // 订阅导入客户端显示控制 部分面板不支持SingBox导入请您注意检查
 
         // iOS平台
-        showShadowrocket: true,
+        showShadowrocket: false,
         showSurge: true,
         showStash: true,
         showQuantumultX: true,
