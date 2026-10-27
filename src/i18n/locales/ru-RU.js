@@ -1,4 +1,4 @@
-﻿
+
 import { SITE_CONFIG } from '../../utils/baseConfig';
 
 export default {
@@ -216,6 +216,8 @@ export default {
     importTitle: 'Выберите способ импорта',
     copySubscription: 'Копировать адрес подписки',
     copySubscriptionDesc: 'Копировать ссылку подписки в буфер обмена',
+    copyShadowrocketSubscription: 'Копировать адрес подписки (для Shadowrocket)',
+    copyShadowrocketSubscriptionDesc: 'Копировать ссылку Shadowrocket в буфер обмена',
     scanQRCode: 'Сканировать QR-код подписки',
     scanQRCodeDesc: 'Используйте клиент для сканирования QR-кода',
     importToShadowrocket: 'Импортировать в Shadowrocket',

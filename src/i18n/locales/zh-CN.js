@@ -1,4 +1,4 @@
-﻿import {SITE_CONFIG} from '../../utils/baseConfig';
+import {SITE_CONFIG} from '../../utils/baseConfig';
 
 export default {
     common: {
@@ -219,6 +219,8 @@ export default {
         importTitle: '选择导入方式',
         copySubscription: '复制订阅地址',
         copySubscriptionDesc: '复制订阅链接到剪贴板',
+        copyShadowrocketSubscription: '复制订阅地址（Shadowrocket专用）',
+        copyShadowrocketSubscriptionDesc: '复制Shadowrocket专用转换链接到剪贴板',
         scanQRCode: '扫描二维码订阅',
         scanQRCodeDesc: '使用客户端扫描二维码导入',
         importToShadowrocket: '导入到 Shadowrocket',

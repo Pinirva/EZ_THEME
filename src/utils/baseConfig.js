@@ -505,6 +505,9 @@ const DEFAULT_DASHBOARD_CONFIG = {
     
     // 是否显示导入订阅
     showImportSubscription: true,
+
+    // Shadowrocket 专用订阅转换前缀
+    shadowrocketSubPrefix: 'https://shadowrocket.ytoo.online/config?subscription_url=',
 };
 
 export const DASHBOARD_CONFIG = mergeDeep(DEFAULT_DASHBOARD_CONFIG, getConfig('DASHBOARD_CONFIG'));

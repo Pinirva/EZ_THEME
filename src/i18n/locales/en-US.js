@@ -1,4 +1,4 @@
-﻿import {SITE_CONFIG} from '../../utils/baseConfig';
+import {SITE_CONFIG} from '../../utils/baseConfig';
 
 export default {
     common: {
@@ -219,6 +219,8 @@ export default {
         importTitle: 'Select Import Method',
         copySubscription: 'Copy Subscription Link',
         copySubscriptionDesc: 'Copy subscription link to clipboard',
+        copyShadowrocketSubscription: 'Copy Subscription Link (Shadowrocket)',
+        copyShadowrocketSubscriptionDesc: 'Copy Shadowrocket subscription link to clipboard',
         scanQRCode: 'Scan QR Code to Subscribe',
         scanQRCodeDesc: 'Use the client to scan the QR code to import',
         importToShadowrocket: 'Import to Shadowrocket',

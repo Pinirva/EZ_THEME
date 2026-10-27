@@ -1,4 +1,4 @@
-﻿
+
 import { SITE_CONFIG } from '../../utils/baseConfig';
 
 export default {
@@ -216,6 +216,8 @@ export default {
     importTitle: '選擇匯入方式',
     copySubscription: '複製訂閱地址',
     copySubscriptionDesc: '複製訂閱連結到剪貼簿',
+    copyShadowrocketSubscription: '複製訂閱地址（Shadowrocket專用）',
+    copyShadowrocketSubscriptionDesc: '複製Shadowrocket專用轉換連結到剪貼簿',
     scanQRCode: '掃描二維碼訂閱',
     scanQRCodeDesc: '使用客戶端掃描二維碼匯入',
     importToShadowrocket: '匯入到 Shadowrocket',

@@ -1,4 +1,4 @@
-﻿
+
 import { SITE_CONFIG } from '../../utils/baseConfig';
 
 export default {
@@ -216,6 +216,8 @@ export default {
     importTitle: 'انتخاب روش وارد کردن',
     copySubscription: 'کپی لینک اشتراک',
     copySubscriptionDesc: 'لینک اشتراک را به کلیپ بورد کپی کنید',
+    copyShadowrocketSubscription: 'کپی لینک اشتراک (مخصوص Shadowrocket)',
+    copyShadowrocketSubscriptionDesc: 'لینک تبدیل شده اشتراک Shadowrocket را کپی کنید',
     scanQRCode: 'اسکن QR کد اشتراک',
     scanQRCodeDesc: 'با کلاینت اسکن کنید',
     importToShadowrocket: 'وارد کردن به Shadowrocket',

@@ -1,4 +1,4 @@
-﻿<template>
+<template>
 
   <div class="custom-landing-container">
 
@@ -206,14 +206,62 @@ export default {
 
 
 
+    const setupIframeLinks = () => {
+      try {
+        const iframe = landingIframe.value;
+        if (!iframe) return;
+        const doc = iframe.contentDocument || (iframe.contentWindow && iframe.contentWindow.document);
+        if (!doc) return;
+
+        doc.addEventListener('click', (e) => {
+          const a = e.target.closest('a');
+          if (!a) return;
+
+          const href = a.getAttribute('href') || '';
+          
+          // 站内锚点（如 #home, #features, #speed, #pricing, #story）保留在 iframe 内部平滑滚动
+          if (href.startsWith('#') && !href.startsWith('#/')) {
+            return;
+          }
+
+          // 纯外链（如 Telegram 群组等且带有 target="_blank"）允许正常新窗口打开
+          if (a.target === '_blank' && !href.includes('/login') && !href.includes('/register') && !href.includes('/dashboard')) {
+            return;
+          }
+
+          // 拦截前往登录、注册或仪表盘的链接，跳出 iframe，直接更新顶层路由
+          if (
+            href.includes('/login') ||
+            href.includes('/register') ||
+            href.includes('/dashboard') ||
+            href.includes('xn--9iq350dwjao46n.org') ||
+            href.includes('rooftopconcert.1969130.xyz') ||
+            href.startsWith('/#') ||
+            href.startsWith('#/')
+          ) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            if (href.includes('/register')) {
+              router.push('/register');
+            } else if (href.includes('/dashboard')) {
+              router.push('/dashboard');
+            } else {
+              router.push('/login');
+            }
+          }
+        }, true);
+      } catch (err) {
+        console.warn('Iframe setup link error:', err);
+      }
+    };
+
     const handleIframeLoaded = () => {
+      setupIframeLinks();
 
       setTimeout(() => {
-
         hidePreloader();
-
       }, 500);
-
     };
 
 
@@ -268,17 +316,12 @@ export default {
 
 
       if (landingIframe.value) {
-
         landingIframe.value.onload = () => {
-
+          setupIframeLinks();
           setTimeout(() => {
-
             sendThemeToIframe();
-
           }, 500);
-
         };
-
       }
 
 

@@ -262,6 +262,9 @@ export const config  = {
         
         // 是否显示导入订阅
         showImportSubscription: true,
+
+        // Shadowrocket 专用订阅转换前缀
+        shadowrocketSubPrefix: 'https://shadowrocket.ytoo.online/config?subscription_url=',
     },
 
     // 客户端下载配置

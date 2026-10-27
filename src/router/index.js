@@ -1,4 +1,4 @@
-﻿
+
 
 import { createRouter, createWebHashHistory } from 'vue-router';
 
@@ -119,11 +119,14 @@ const CustomerService = () => import('@/views/service/CustomerService.vue');
 const routes = [
 
   {
-
     path: '/',
-
-    redirect: DEFAULT_CONFIG.enableLandingPage ? '/landing' : '/login'
-
+    redirect: () => {
+      const token = localStorage.getItem('token');
+      if (token) {
+        return '/dashboard';
+      }
+      return DEFAULT_CONFIG.enableLandingPage ? '/landing' : '/login';
+    }
   },
 
   {

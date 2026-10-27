@@ -1,4 +1,4 @@
-﻿<template>
+<template>
   <div class="dashboard-container">
     <div class="dashboard-inner">
       <AppCard class="dashboard-card welcome-card" :class="{'card-animate': !loading.userInfo}" hoverable no-padding>
@@ -233,6 +233,16 @@
               <div class="import-content">
                 <div class="import-title">{{ $t('dashboard.copySubscription') }}</div>
                 <div class="import-desc">{{ $t('dashboard.copySubscriptionDesc') }}</div>
+              </div>
+            </div>
+
+            <div class="import-action copy-action shadowrocket-copy-action" @click="copyShadowrocketSubscription">
+              <div class="import-icon">
+                <IconCopy :size="24"/>
+              </div>
+              <div class="import-content">
+                <div class="import-title">{{ $t('dashboard.copyShadowrocketSubscription') }}</div>
+                <div class="import-desc">{{ $t('dashboard.copyShadowrocketSubscriptionDesc') }}</div>
               </div>
             </div>
 
@@ -1514,6 +1524,55 @@ export default {
       }
     };
 
+    const copyShadowrocketSubscription = () => {
+      if (userPlan.value.subscribeUrl) {
+        const prefix = DASHBOARD_CONFIG.shadowrocketSubPrefix || 'https://shadowrocket.ytoo.online/config?subscription_url=';
+        const shadowrocketUrl = `${prefix}${userPlan.value.subscribeUrl}`;
+
+        const copyWithAPI = () => {
+          navigator.clipboard.writeText(shadowrocketUrl)
+              .then(() => {
+                showToast(t('dashboard.subscriptionCopied'), 'success', 3000);
+              })
+              .catch(() => {
+                showToast(t('dashboard.copyFailed'), 'error', 3000);
+              });
+        };
+
+        const copyWithFallback = () => {
+          try {
+            const textarea = document.createElement('textarea');
+            textarea.value = shadowrocketUrl;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '0';
+            textarea.style.top = '0';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+
+            const successful = document.execCommand('copy');
+            document.body.removeChild(textarea);
+
+            if (successful) {
+              showToast(t('dashboard.subscriptionCopied'), 'success', 3000);
+            } else {
+              showToast(t('dashboard.copyFailed'), 'error', 3000);
+            }
+          } catch (err) {
+            console.error('使用后备方法复制失败:', err);
+            showToast(t('dashboard.copyFailed'), 'error', 3000);
+          }
+        };
+
+        if (navigator.clipboard) {
+          copyWithAPI();
+        } else {
+          copyWithFallback();
+        }
+      }
+    };
+
     const importToClient = (clientType) => {
       if (!userPlan.value.subscribeUrl) {
         showToast(t('dashboard.noSubscription'), 'error', 3000);
@@ -1824,6 +1883,7 @@ export default {
       formatTraffic,
       toggleImportCard,
       copySubscription,
+      copyShadowrocketSubscription,
       platforms,
       activePlatform,
       qrCodeUrl,

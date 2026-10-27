@@ -1,4 +1,4 @@
-﻿
+
 import { SITE_CONFIG } from '../../utils/baseConfig';
 
 export default {
@@ -216,6 +216,8 @@ export default {
     importTitle: '가져오기 방식 선택',
     copySubscription: '구독 주소 복사',
     copySubscriptionDesc: '구독 링크를 클립보드에 복사',
+    copyShadowrocketSubscription: '구독 주소 복사 (Shadowrocket 전용)',
+    copyShadowrocketSubscriptionDesc: 'Shadowrocket 전용 구독 링크를 클립보드에 복사',
     scanQRCode: 'QR 코드 스캔으로 구독',
     scanQRCodeDesc: '클라이언트로 QR 코드를 스캔하여 가져오기',
     importToShadowrocket: 'Shadowrocket으로 가져오기',

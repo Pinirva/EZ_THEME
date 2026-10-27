@@ -1,4 +1,4 @@
-﻿
+
 import { SITE_CONFIG } from '../../utils/baseConfig';
 
 export default {
@@ -216,6 +216,8 @@ export default {
     importTitle: 'インポート方法選択',
     copySubscription: 'サブスクリプションアドレスをコピー',
     copySubscriptionDesc: 'サブスクリプションリンクをクリップボードにコピー',
+    copyShadowrocketSubscription: 'サブスクリプションアドレスをコピー（Shadowrocket専用）',
+    copyShadowrocketSubscriptionDesc: 'Shadowrocket専用変換リンクをクリップボードにコピー',
     scanQRCode: 'QRコードスキャンでサブスクリプション',
     scanQRCodeDesc: 'クライアントでQRコードをスキャンしてインポート',
     importToShadowrocket: 'Shadowrocketにインポート',

@@ -225,6 +225,8 @@ export default {
         importTitle: 'Chọn cách nhập',
         copySubscription: 'Sao chép địa chỉ đăng ký',
         copySubscriptionDesc: 'Sao chép liên kết đăng ký vào clipboard',
+        copyShadowrocketSubscription: 'Sao chép địa chỉ đăng ký (Dành riêng cho Shadowrocket)',
+        copyShadowrocketSubscriptionDesc: 'Sao chép liên kết chuyển đổi Shadowrocket vào clipboard',
         scanQRCode: 'Quét mã QR đăng ký',
         scanQRCodeDesc: 'Sử dụng client để quét mã QR nhập',
         importToShadowrocket: 'Nhập vào Shadowrocket',
