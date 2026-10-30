@@ -296,10 +296,10 @@ export const config  = {
         showShadowrocket: false,
         showSurge: true,
         showStash: true,
-        showQuantumultX: true,
+        showQuantumultX: false,
         showHiddifyIOS: false,
         showSingboxIOS: false,
-        showLoon: true,
+        showLoon: false,
 
         // Android平台客户端
         showFlClashAndroid: true,
@@ -326,7 +326,7 @@ export const config  = {
         showClashMetaX: false,
         showSurgeMac: true,
         showStashMac: true,
-        showQuantumultXMac: true,
+        showQuantumultXMac: false,
         showSingboxMac: false,
         showHiddifyMac: false
     },
